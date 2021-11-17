@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaramogi oginga odinga university of science and technology</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+                
+.box2{position:relative}
+.box2 img{width:100%;height:auto}
+.box2 .box-content{width:100%;height:100%;position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%)}
+.box2 .box-content:after,.box2 .box-content:before,.box2:after,.box2:before{content:"";width:80%;height:80%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);transition:all .5s ease 0s}
+.box2:before{background:linear-gradient(45deg,rgba(0,0,0,.2) 49%,transparent 50%);left:-100%}
+.box2:after{background:linear-gradient(45deg,transparent 49%,rgba(0,0,0,.2) 50%);left:160%}
+.box2 .box-content:after,.box2 .box-content:before{width:65%;height:65%;background:linear-gradient(45deg,rgba(0,0,0,.3) 49%,transparent 50%);left:-100%;transition-delay:.1s}
+.box1 .box-content:after{background:linear-gradient(45deg,transparent 49%,rgba(0,0,0,.3) 50%);left:160%}
+.box2:hover .box-content:after,.box2:hover .box-content:before,.box2:hover:after,.box2:hover:before{left:50%}
+.box2 .inner-content{width:50%;height:50%;color:#fff;padding:40px 0;position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%) scale(0);transition:all .3s ease .2s}
+.box2 .inner-content:after{width:100%;height:100%;background:rgba(255,79,79,.8);position:absolute;top:50%;left:50%;z-index:-1;transform:translate(-50%,-50%) rotate(45deg)}
+.box2:hover .inner-content{transform:translate(-50%,-50%) scale(1);transition:all .3s ease 0s}
+.box2 .title{font-size:18px;font-weight:700;text-transform:uppercase;margin-bottom:5px}
+.box2 .post{display:block;font-size:14px;text-transform:capitalize;margin-bottom:7px}
+.box10 .title,.box11 .title,.box4 .title,.box5 .title,.box6 .box-content,.box7 .title{text-transform:uppercase}
+.box2 .icon{padding:0;margin:0;list-style:none;transform:rotateY(360deg) scale(0);transition:all .3s ease 0s}
+.box2:hover .icon{transform:rotateY(0) scale(1)}
+.box2 .icon li{display:inline-block;margin:0 3px}
+.box2 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:16px;color:#505050;transition:all .3s ease 0s}
+.box2 .icon li a:hover{box-shadow:0 0 0 5px rgba(0,0,0,.5);background:#fff;color:#ff4f4f}
+@media only screen and (max-width:990px){.box2{margin-bottom:30px}
+}
+@media only screen and (max-width:320px){.box2 .inner-content{padding:25px 0}
+.box2 .title{font-size:16px}
+}
+
+
+
+/***************************portfolio******************/
+.bs-example {
+  width:100%;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+/*************************end port***************/
+
+/**************************flipcard********************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 1;
+}
+
+.flip-card-back {
+  background-color: red;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/*************************end flip***********************/
+
+body{
+ font-family: Arial, Verdana, sans-serif;
+  background-color: white;
+  color: blue;
+  }
+
+/*--------------------------------shrink header-----------------*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  font-family: Arial, Verdana sans-serif;
+  padding-top: 90px;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.8em;
+  font-weight: 300;
+  color: green;
+  margin: 30px 0;
+}
+
+strong {
+  font-weight: 600;
+  color: yellow;
+}
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+/* ==========================================================
+        Navbar Styles
+   ==========================================================*/
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: #000099;
+  color: blue;
+  transition: all 0.3s;
+}
+.navbar a {
+  color: white;
+}
+
+.navbar button {
+  color: white;
+}
+
+.navbar.compressed {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: ;
+  box-shadow: #111111;
+}
+/*----------------------------------end shrink---------------------*/
+
+
+
+/*********************************start staff login****************/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+<!-------------------------------------------------------------------button--------------------------------->
+button{
+    background-color: #2f8e92;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 5%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    color':blue;
+}
+
+/* The Modal (background) */
+.student-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f9f9f9;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 10%;
+    }
+}
+<!-------------------------------------------------------end staff----------------------------------------------->
+/******************************************glyghicon*/
+ .fa {
+    padding: 4px;
+    width: 500px;
+  }
+
+  .fa::before {
+    display: inline-block;
+    /* .fa-fw */
+    width: 1.9em;
+    text-align: center;
+  }
+
+  .fa::after {
+    
+    font-family: consolas, monospace;
+    font-size: 15px;
+    /* .code */
+    padding: 2px 4px;
+    color: yellow;
+    background-color: blue;
+    border-radius: 4px;
+    margin-left: 5px;
+  }
+/***************************javascript*/
+
+/***************************begin filter*****/
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+
+
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/**************************************end filter********/
+/*************************form*********************************/
+
+
+/*******************************start full screen overla******/
+
+/***********************************end full**************************/
+
+/*****************************start mega menu********************/
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight:750;
+  text-align: right;
+}
+.dropdown-large {
+  position: static !important;
+}
+.dropdown-menu-large {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: square;
+}
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight:750;
+  line-height: 1.428571429;
+  color: blue;
+  white-space: normal;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #2f8e92;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: white;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: #adadad;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #665544;
+  font-size: 24px;
+text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0px;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
+/*****************end mega menu*/
+background: grey;
+
+    margin-top: 1px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    maximum-height: 100%;
+                minimum-height: 100%;
+}
+.bs-example{
+	margin: 1px;
+                      background-color: grey;
+}
+
+h1 {
+  color: green;
+ 
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    display: inline-block;
+    
+    clear: both;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+   margin: 15px; 
+}
+
+.container-fluid {
+  text-align: left;
+}
+  
+
+
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 1px;
+   width: 100%;
+   background-color: #800080;
+   color: white;
+   text-align: center;
+}
+
+.science{
+  background-image: url("a1.jpg");
+  color: blue;
+}
+
+
+/*----strat prifile card-----*/
+
+.header {
+  display: block;
+}
+
+.container {
+  text-align: left;
+}
+
+/*------------start shrink header---*/
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.alumni {
+  background-color: ff0000;
+  color:white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+/*--------------end shrikh---*/
+/************************************footerc*******************/
+/*********************************************************************card******************************/
+.container {
+    position: relative;
+    width: 20%;
+    FLOAT: LEFT;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 30%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+/************************************and card***********************************/
+ 
+
+
+/************************************flip**********************/
+.flip-card {
+  background-color: transparent;
+  width:150px;
+  height: 160px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 1;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/******************************end flip****************/
+.logo {
+  
+}
+
+.science {
+  background: url('n2.jpg');
+background-color: rgba(248, 247, 216, 0.7);
+}
+
+ blockquote {
+           background-color: white;
+           color: blue;
+           float: right;
+           width: 270px;
+           font-size: 130;
+           font-style: italic;
+          font-family: Geogia, Times, serif;
+          margin: 1px solid #665544;
+          border-top: 3px solid #665544;
+          border-bottom: 5px solid #111;}
+.scienceblog {
+  background-image:url("galaxy4.jpg");
+ text-align:left;
+}
+</style>
+</head>
+<body>
+
+
+<!----------------start shrink header----->
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Navbar Header [collects both toggle button and navbar brand] -->
+      <div class="navbar-header">
+        <!-- Toggle Button [handles opening navbar menu on mobile screens]-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents" aria-expanded "false">
+                        <i class="glyphicon glyphicon-align-center"></i>
+                    </button>
+
+        <!-- Navbar Brand -->
+        <a href="#" class="navbar-brand">
+                        <img class="logo" src="logo.png" style="width:70%">
+                    </a>
+      </div>
+<div class="container-fluid" style="text-align:right;">
+<a href="">THE DIGITAL REPOSITORY | <small><a href="">STUDY ONLINE</a></small></a><br  /><br />
+
+<!--------------------------------start staff------------------------------->
+<div class="container-fluid" style="text-align:right;width:100%">
+
+ <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;background-color:#553d67;border:none;">Student portal</button>
+
+<div id="id01" class="student-modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="q1.jpg" alt="me" class="avatar">
+    </div>
+
+    <div class="container-fluid">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" class="btn btn-danger btn-sm">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+   
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class=" btn-primary btn-sm cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+<!----------------------------------end staff--------------------------->
+|
+      <!------------------------------------------------- student portal------------------------------------------->
+
+ <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;background-color:#553d67;border:none">Staff Login</button>
+
+<div id="id01" class="student-modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img  src="q2.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!---------------end student portal--------------------------------------------------------------------------------------> 
+
+<button class="btn btn-primary btn-xs">search resources</button>
+
+      <!-- Navbar Collapse [collect navbar components such as navbar links and forms ] -->
+      <div class="collapse navbar-collapse" id="exampleNavComponents">
+
+        <!-- Navbar Links -->
+
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropdown-large">
+				
+      </li>                                        
+			<li class="dropdown dropdown-large">
+                                                                     
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">CAMPUSES <b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-12">
+						<ul>
+							<li class="dropdown-header">ACROSS KENYA</li>
+							<li><a href="maincampus.html">MAIN CAMPUS</a>
+							<li><a href="kisumucampus.htl">KISUMU CAMPUS</a>
+							<li><a href="kisiicampus.html">KISII CAMPUS</a>
+							
+              <li class="divider"></li>
+              <img class"img-responsive" src="kifaru.jpg" width="250" height="200"></li>						</ul>
+</ul>
+
+<li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">FACULTIES & DEPARTMENTS<b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-6">
+						<ul>
+							<li class="dropdown-header">SCHOOLS</li>
+							<li><a href="SBE.html">SCHOOL OF BUSINESS AND ECONOMICS</a></li>
+							<li><a href="SETG.html">SCHOOL OF ENGINEERING & TECHNONLOGY</a></li>
+							<li><a href="HC.html">SCHOOL OF HEALTH SCIENCES</a></li>
+							<li><a href="HSC.html">SCHOOL OF HUMANITIES & SOCIAL SCIENCES</a></li>
+							<li><a href="IISS.html">SCHOOL OF INFORMATICS & INNOVATIVE SYSTEMS</a></li>
+							<li><a href="EDU.html">SCHOOL OF EDUCATION</a></li>
+              <li class="divider"></li>                  <li><a href="MAC.html">SCHOOL OF MATHEMATICS & ACTUARIAL SCIENCES</a></li>
+							<li><a href="SPNRM.html">SCHOOL OF SPATIAL PLANNING & NATURAL RESOURCE MANAGEMENT</a></li>
+							<li><a href="BPC.html">SCHOOL OF BIOLOGICAL & PHYSICAL SCIENCES</a></li>
+							<li><a href="AFC.html">SCHOOL OF AGRICULTURAL & FOOD SCIENCES</a></li>
+              <li class="dropdown-header">CONTACTS</li>
+						<li>CELLPHONE: +254732020653</li>
+                                                <li><a href="mailto:pascalouma54@gmail.com">EMAIL</a></li>	
+						</ul>
+					</li>
+					<li class="col-sm-6">
+						<ul>
+							<li class="dropdown-header">GET THE BEST OUT OF US</li>
+							<li><a href="GMS.html">GENDER MAINSTREAMING</a></li>
+							<li><a href="LIB.html">THE LIBRARY</a></li>
+							<li><a href="ADVICE.html">SEEK FOR ADVICE</a></li>
+							<li><a href="KNOWDEP.html">KNOW YOUR DEPARTMENT</a></li>
+							<li><a href="ATALK.html">ACCADEMIC TALK</a></li>
+							<li><a href="LATEST.html">GET NEWS UPDATES ABOUT YOUR SCHOOL</a></li>
+							<li class="divider"></li>
+              <img class"img-responsive" src="Q3.jpg" style="width:30%">
+						</ul>
+					</li>
+
+					
+				</ul>
+				
+			</li>
+      
+     
+      
+      <li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"> MORE<b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">ACADEMIC AFFAIRS</li>
+							<li><a href="SUBMIN.html">ADMISSIONS</a></li>
+							<li><a href="freshers.html">FRESHERS</a></li>
+							<li><a href="staffroom.html">CONTINUING STUDENTS</a></li>
+							<li><a href="C&A.html">POST GRADUATES STUDY</a></li>
+							<li><a href="studentselfservice.html">ALUMNI</a></li>
+							<li><a href="#">A-Z INDEX</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header"></li>
+							<li><a href="subminimum.html">SUBMINIMUM EMPLOYMENT</a></li>
+							<li><a href="selfservice.html">STUDENT SELF SERVICE</a></li>
+							<li><a href="staffroom.html">STAFFROOM</a></li>
+							<li><a href="catering.html">CATERING & ACCOMMODATION</a></li>
+					<li class="divider"></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">RESOURSES</li>
+							<LI><a href="library.html">IN THE LIBRARY</a></LI>
+							<li><a href="electronic.html">ELECTRONIC GADGETS</a></li>
+							<li><a href="#">DOWNLOADS</a></li>
+							<li><a href="#">NOTICES</a></li>
+							<li><a href="#">STUDENT RESULTS</a></li>
+							<li class="divider"></li>
+              <img class"img-responsive" src="q21.jpg" width="200" height="200">
+						</ul>
+					</li>
+<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">FAITH</li>
+							<li><a href="#">CHRISTIAN UNION</a></li>
+							<li><a href="#">SEVENTH DAY ADVENTIST</a></li>
+							<li><a href="#">REPENTANCE & HOLINESS CHURCH</a></li>
+							
+              <li class="divider"></li>
+              <li class="dropdown-header">HEALTH</li>
+							
+							<li><a href="contributions.html">MEDICATION SERVICES</a></li>
+							<li><a href="#">EMMERGENCY RESPONSE</a></li>
+							<li><a href="#">HOSPITALS</a></li>
+					
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>       <li class="divider"></li>
+							<li class="dropdown-header"></li>
+							<li><a href="INSTITUTES.html">INSTITUTES</a></li>
+							<li><a href="BOARDS.HTML">BOARDS</a></li>
+							<li><a href="directorates.html">DIRECTIRATES</a></li>
+							<li><a href="units.htm;">UNITS</a></li>
+							<li><a href="centers.html">CENTERS</a></li>
+							<li><a href="helpful.html">HELPFUL INFO</a></li>
+							<li class="divider"></li>
+              <img class"img-responsive" src="q20.jpg" width="200" height="200">
+
+</div>
+ 
+      
+
+
+
+  
+    </div> 
+  </nav></div>
+<br /><br /><br /><br /><br />
+<!---------------------END MEGA MENU------>
+
+<!-----------------form-------------------------->
+
+<!----------------------------end form---------->
+         
+
+
+ 
+<!--------------------end nav menu---->
+
+<!-----------------------start carousel---->
+
+<div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!------------------------- Carousel indicators ---------------------------------------->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            
+        </ol>   
+        <!-- Wrapper for carousel items -->
+       
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="js1.jpg" alt="First Slide">
+            </div>
+            <div class="item">
+                <img src="js2.jpg" alt="Second Slide">
+            </div>
+            <div class="item">
+                <img src="js3.jpg" alt="Third Slide">            
+            </div>
+
+                
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div></div></div></div>
+<!-----------------------------end corousel-----><hr />
+ <!------------------ Hover Effect Style --------------->
+  <div class="container-fluid" style="background-color:#808080;">
+ <div class="container mt-40" style="background-color:gray;">
+ 
+ <div class="box2">
+                        
+<img src="me1.jpg" styel="width:100%;background-color;#808080">
+                        
+<div class="box-content">
+                           
+ <div class="inner-content">
+                                
+<h3 class="title" style="text-align:center">Pascal</h3>
+                                
+<span class="post" style="text-align:center">Designer</span>
+                                
+<ul align="center" class="icon">
+                                    
+<li align="center"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                   
+ <li align="center"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                               
+ </ul>
+                            
+</div>
+                        
+</div>
+                    
+</div>
+</div>
+
+<div class="col-md-9" style="text-align:left;background-color:#2f8e92;color:(220,200,200)">
+<blockquote>"<abbr title="JARAMOGI OGINGA ODINGA UNIVERSITY OF SCIENCE AND TECKNOLOGY">JOOUST</abbr> is a centre of excellence in training, r
+esearch and community outreach services offering practical and market oriented courses.
+
+The University is a premier institution of higher learning offering relevant and quality market driven 
+academic programmes for steering Socio-economic 
+development"-
+ -Prof. James Hawkins" </blockquote>              
+The University is strategically located at the quiet serene beaches of Lake Victoria and focuses 
+on the development of Kenya's cultural heritage through the utilization of the vast natural resources for academic 
+advancement and research purposes premised on improving the socio-economic status of communities.<hr />
+</div>           
+</div>
+<div class="card" style="width:100%; background-color: #808080;margin-right:20px;">
+<div class="container-fluid" style="background-color:white; color:#000099; margin:15px;">
+<div class="row">
+<h2 style="background-color:#f2f2f2;" align="left"><b> NEWS <div class="well well-small"><small><b><a href=""><small><a href=""><b>ALL NEWS </a> </small><small> | <a href=""><b>CAMPUS NEWS</a> </small><small> | <a href=""><b>SCIENCE & TECHNOLOGY</a></small> <small> | <a href=""><b> HEALTH</a></small>
+<small> | <a href=""><b>LIFESTYLE</a> | </small> <small><a href=""> <b>SPORTS</b></a></small></div> </h2>
+<!-- Portfolio Gallery Grid -->
+<div class="container-fluid" style="background-color:#553d67;">
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <video width="100%" height="100%" height="240" controls>
+  <source src="pets.mp4" type="video/mp4">
+  <source src="waterfall.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<p>9<sup>th</sup>Oct 2018</p>
+      <h3>Jooust officially launhed the TIS center</h3>
+      <p style="color:black">Jaramogi Oginga Odinga University of Science and Technology officially launched the
+ Technology and Innovation Support Centre (TISC) during a sensitization and training on Intellectual property rights.
+<button class="btn btn-primary btn-sm">Read News</div>
+</div>  
+<div class="column">
+    <div class="content">
+   <video width="100%" height="100%" height="240" controls>
+  <source src="pangla.mp4" type="video/mp4">
+  <source src="waterfall.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<p>12<sup>th</SUP>Oct 2018</p>
+      <h3>"WITH HER: A SKILLED GIRLFORCE" </h3>
+      <p  style="color:black">This was the theme that resonated during this years' Girl child day that was celebrated all over the world. The event was marked with pomp and colour in Siaya County by Dignitaries, schools, NGOs and Government actors.
+ <button class="btn btn-primary btn-sm">Read News</button></div>
+ </div>
+  <div class="column">
+    <div class="content">
+    <img src="q2.jpg" alt="Nature" style="width:100%">
+<p>28<sup>th</sup>Sep 2018</p>
+      <h3>Jooust student represents Kenya at the 2018 sandpit event-Ethiopia </h3>
+      <p  style="color:black">Ms. Maryanne Usagi, a PhD Student in JOOUST, studying Microbiology, at the School of Biological and Physical Sciences has been nominated for the 2018 Sandpit event in Addis Ababa, Ethiopia organized and funded by One Health Regional Network (HORN). The event will take place between 8th October and 12th October, 2018.</p>
+   <button class="btn btn-primary btn-sm">Read News</button>
+ </div>
+  </div>
+  <div class="column">
+    <div class="content">
+   <video width="100%" height="100%" height="240" controls>
+  <source src="pets.mp4" type="video/mp4">
+  <source src="guitar.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<p>28<sup>th</sup>Sep 2018</p>
+      <h3>Jooust student represents Kenya at the 2018 sandpit event-Ethiopia </h3>
+      <p  style="color:black">Ms. Maryanne Usagi, a PhD Student in JOOUST, studying Microbiology, at the School of Biological and Physical Sciences has been nominated for the 2018 Sandpit event in Addis Ababa, Ethiopia organized and funded by One Health Regional Network (HORN). The event will take place between 8th October and 12th October, 2018.</p>
+   <button class="btn btn-primary btn-sm">Read News</button>
+ </div>
+  </div>
+<div class="pager">
+
+
+  </div></div><hr /></div>
+<!-- END GRID -->
+
+
+<!----------------------------------events------------------------>
+<div class="container-fluid">
+<div class="col-md-5">
+<h3 style="color:green;">EVENTS</h3>
+<div id="myBtnContainer" >
+  <button class="btn active" onclick="filterSelection('all')"> Show all Events</button>
+  <button class="btn active" onclick="filterSelection('current')">Current</button>
+  <button class="btn active" onclick="filterSelection('upcoming')">  Upcoming</button>
+  <button class="btn active" onclick="filterSelection('older')"> Older</button>
+  <button class="btn active" onclick="filterSelection('the oldest')"> The oldest</button>
+
+</div></div></div>
+
+
+
+  <div class="filterDiv current"><a href="#"><p>First year orientation process 4<sup>th</sup> Nov 2018</a></p></div>
+  <div class="filterDiv the oldest older"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv current"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv the oldest"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv current upcoming"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv the oldest"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv upcoming"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv upcoming"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv older"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv older the oldest"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv older"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+  <div class="filterDiv older"><p>First year orientation process 4<sup>th</sup> Nov 2018</p></div>
+</div></div>>
+<hr />
+<!------------------------end EVENTS-------------->
+
+<div class="card" style="width:100%">
+<div class="scienceblog">
+
+  <h2 class="science" style="color:yellow;text-align:left"><b>SCIENCE BLOG</h2><hr />
+<!-- Portfolio Gallery Grid -->
+
+<div class="row">
+  <div class="col-md-2">
+    <div class="content">
+      <video width="100%" height="100%" height="240" controls>
+  <source src="pets.mp4" type="video/mp4">
+  <source src="roses.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+      <h3>Science news1</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="content">
+    <img src="q6.jpg" alt="Lights" style="width:100%">
+      <h3>Science news1</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="content">
+    <img src="q1.jpg" alt="Nature" style="width:100%">
+      <h3>Science news1</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="content">
+     <video width="100%" height="100%" height="240" controls>
+  <source src="boji.mp4" type="video/mp4">
+  <source src="landscape.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+      <h3>Science news1</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<div class="col-md-3" style="background-color:rgba(70,70,70,0.9);color:green">
+<h3 style="background-color:white;color:green;text-align:center;">INSEFOODS</h3>
+<img src="insect.jpg" style="width:100%">
+<p style="color:white">Food and nutrition insecurity remain a major challenge in sub-Saharan Africa due to especially limited access to proteins. Protein is often the most expensive ingredient in human food and animal feeds. Insects have been identified to be an inexpensive alternative source of animal protein for food and feeds due to their nutritional value and efficiency in food conversion. However, the development of insect technology for food and feed is hampered by limited capacity in research, training, outreach and technology development and transfer.
+<button class="btn btn-warning btn-sm">More science</button>
+
+</div>
+</div></div></div>
+<!-- END GRID --><hr />
+<!-----------------------------------------------------------------------------------start cont students--------------------------------->
+
+<div class="col-md-3" style="background-color:#2f8e92;color:yellow;text-align:left">
+<h2 style="color:#ffffff">DISCOVER</h2>
+<ul><li>Arts and craft</li><li>News around JOOUST</li><li>Young talents</li><li>Explore: The home of big questions</li></ul>
+<p style="color:white">Welcome to the most attractive tourist attraction in Nyanza <i>KIT MIKAYI.</i></p>
+
+<hr />
+<h3><b>The president</h3>
+<img src="q16.jpg" style="width:100%">
+</div>
+
+<div class="col-md-9">
+<div class="container-fluid" style="text-align:left;background-color:#444;">
+<h3 style="background-color:#f1f1f1;color:red"><b>STUDENT BLOG</h3>
+
+<div class="row" style="background-color:f9f9f9:">
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="me1.jpg" alt="From the vc desk" style="width:100%;">
+
+    </div>
+    <div class="flip-card-back">
+     Hi, am stacey<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Don't brag about what you did, the world is too big.
+     Your contribution is just a drop in the ocean.
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="me1.jpg" alt="From the vc desk" style="width:100%;">
+
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="a1.jpg" alt="From the vc desk" style="width:100%;">
+<p style="color:white;">lorem ipsum dollar sit amet
+lorem ipsum dollar sit amet</p>
+
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="me1.jpg" alt="From the vc desk" style="width:100%;">
+<p style="color:white;">lorem ipsum dollar sit amet
+lorem ipsum dollar sit amet</p>
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="a2.jpg" alt="From the vc desk" style="width:100%;">
+<p style="color:white;">lorem ipsum dollar sit amet
+lorem ipsum dollar sit amet</p>
+
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="a3.jpg" alt="From the vc desk" style="width:100%;">
+<p style="color:white;">lorem ipsum dollar sit amet
+lorem ipsum dollar sit amet</p>
+
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="me1.jpg" alt="From the vc desk" style="width:100%;">
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-2">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="me1.jpg" alt="From the vc desk" style="width:100%;">
+
+    </div>
+    <div class="flip-card-back">
+      Am Pascal by the way<hr /> 
+<i style="color:blue"><b><u>My quote:</i></u/><br />
+      Keep trying,may be you'll become a sify character if you don't stop.
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div></div></div></div><hr />
+
+
+<!--------cont students-------------------------------------.><!------------------------------end cards----------------->
+<div class="container-fluid" style="background-color:#ff0000;color:white">
+
+<h3 align="left"><b>ALUMNI BLOG</b><h3><hr />
+<div class="row">
+<div class="col-md-3">
+80% employed,
+11% self employed,
+2% study abroad. 100,000+ are talking about this.<br /><hr />
+Join thousands of buddies <a href="http://www.facebook.com">here</a>.<br />
+It's fun, I promise.
+</div>
+
+<div class="row" style="text-align:center;">
+<div class="col-md-8" style="background-color:white;color:#111111;">
+<h3 style="text-decoration:underline;color:red"><b>What they say<hr /></b></h3>
+<div class="row">
+<div class="col-md-2">
+ <img src="me1.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+<br />
+Lorem ipsum dollar sit amet
+</div>
+<div class="col-md-2">
+<img src="q1.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+Lorem ipsum dollar sit amet
+</div>
+<div class="col-md-2">
+<img src="q30.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+Lorem ipsum dollar sit amet
+</div>
+<div class="col-md-2">
+<img src="q2.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+Lorem ipsum dollar sit amet
+</div>
+<div class="col-md-2">
+<img src="q3.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+Lorem ipsum dollar sit amet
+</div>
+<div class="col-md-2">
+<img src="q1.jpg" class="img-rounded" alt="Cinque Terre" width="100" height="100">
+Lorem ipsum dollar sit amet
+</div></div></div></div></div></div>
+</div></div></div>
+
+</div></div></div></div></div>
+</div></div></div>
+
+
+
+<div class="card" style="width:100%;background-color:#f1f1f1; color:blue;margin:15px;">
+<div class="container-fluid">
+
+<div class="row">
+<h2 align="left">VERSITY SPORTS AND FITNESS</h2>
+<div class="col-md-2" style="background-color:white;">
+<img src="s1.jpg" style="width:100%">
+<p  style="color:blue">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<button class="btn btn-link">Read sport</button>   
+</div>
+<div class="col-md-2" style="background-color:white;">
+<img src="s2.jpg" style="width:100%" >
+<p  style="color:blue">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<button class="btn btn-link">Read sport</button>   
+</div>
+<div class="col-md-2" style="background-color:white;">
+<img src="s2.jpg" style="width:100%">
+<p  style="color:blue">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<button class="btn btn-link">Read sport</button>   
+</div>
+
+<div class="col-md-2" style="background-color:white;">
+<img src="s2.jpg" style="width:100%">
+<p  style="color:blue">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<button class="btn btn-link">Read sport</button>   
+</div>
+<div class="col-md-4" style="background-color:#000099;color:white;">
+<h3 style="color:yellow;text-align:center">Jooust politics</h3>
+<img src="me1.jpg" style="width:30%"><p style="color:white">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.</p>
+<p style="color:white">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.</p>
+<p style="color:white">Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam.</p>
+
+</div></div></div></div>
+
+
+
+
+<hr />
+<div class="card" style="width:100%;background-color:#2f8e92;">
+<div class="container-fluid" style="text-align:center">
+<div class="row">
+<h3 align="center">WE ARE GLAD TO PARTNER WITH:</h3>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!------------------------- Carousel indicators ---------------------------------------->
+        
+        <!-- Wrapper for carousel items -->
+       
+        <div class="carousel-inner">
+            <div class="item active">
+<figure>
+                <a href="https://www.ace2.iucea.org"><img src="aceii.jpg" alt="aceii"></a>
+<figcaption>ACEII</figcaption>
+</figure>
+
+            </div><br /><br />
+            <div class="item">
+ <figure>
+                <a href="https://www.ace2.iucea.org"><img src="iucea.jpg" alt="IUCEA" ></a>
+<figcaption>IUCEA</figcaption>
+</figure>
+            </div><br /><br />
+            <div class="item">
+<figure>
+                <img src="worldbank.jpg" alt="The world bank">
+<figcaption>THE WORLD BANK</figcaption>
+</figure>
+       </div></div></div> </div></div> </div></div></div>
+  <div class="footer">                 
+        <H4 style="text-align:left;margin:5px"><b>What he said</h4> 
+<div class="container-fluid" style="background-color:#000099;color:white;">
+<div class="col-md-2">
+<br />
+<video width="100%" height="100%" height="240" controls>
+  <source src="football.mp4" type="video/mp4">
+  <source src="candidate-announcement-speech.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+<div class="col-md-2">
+<p><b><u>
+
+<h4>PRIVACY POLICY</h4>
+   Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet<u></b></p>
+</div>
+<div class="col-md-2">
+<h4>EMMERGENCY SERVISES AND SAFETY</h4>
+ <p>Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet</p>
+</div>
+<div class="col-md-4">
+<h4>YOUR RIGHTS CRIME AND LAW</h4>
+<p>Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet
+Lorem ipsum dollar sit amet</p>
+</div>
+<div class="col-md-2">
+<h4>SUGGESTION BOX</h4>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Help improve JOOUST</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>  
+<a href=""><button class="btn btn-block btn-secondary">Submit</a>
+</div>
+</form>
+
+
+<p><a href="#top">Top</a>
+</div></div>
+<a href="http://www.google-plus.com">
+<span class="fa fa-google-plus-square fa-2x"></span>
+</span>
+</a>
+<a href="http://www.youtube.com">
+<span class="fa fa-youtube-square fa-2x"></span>
+</span>
+</a>
+
+<a href="http://www.twitter.com">
+<span class="fa fa-twitter-square fa-2x"></span>
+</span>
+</a>
+<a href="http://www.facebook.com">
+<span class="fa fa-facebook-square fa-2x"></span>
+</span>
+</a>
+
+
+
+
+<hr />
+
+<div class="col-md-12" style="background-color:#111;color:yellow;">
+<p>&copy; WE ARE 2015:2018 ISO CERTIFIED</p>
+<!----------------------start events------->
+
+<!----------------------start events------->
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+<!-------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------->
+  });
+}
+</script>
+<!----------------------end new----->
+
+
+
+
+
+<!--------------------------------------------------events modal--->
+<script>
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+
+<!-----------------------start staff login------------------->
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-------------------------------------------start booking---------------------->
+
+<!------------start shrink header-------------------->
+<script>
+$(document).ready(function() {
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() >= 20) {
+      $(".navbar").addClass("compressed");
+    } else {
+      $(".navbar").removeClass("compressed");
+    }
+  });
+});
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+
+</body>
+</html>                                                       yle.width = "0%";
+}
+</script>
+
+
+
+
+</body>
+</html>                            essed");
+    }
+  });
+});
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+
+</body>
+</html>                            
